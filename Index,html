@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сайт с кнопками перехода</title>
+  <style>
+    body{
+      margin:0;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      background:linear-gradient(135deg,#1e3a8a,#9333ea);
+      font-family:sans-serif;
+      color:#fff;
+    }
+    .buttons{
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+    }
+    a{
+      text-decoration:none;
+      background:#fff;
+      color:#111;
+      padding:12px 20px;
+      border-radius:10px;
+      text-align:center;
+      font-weight:600;
+      transition:0.2s;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      justify-content:center;
+      font-size:16px;
+    }
+    a:hover{
+      transform:scale(1.05);
+    }
+    .yt{background:#ff0000;color:#fff;}
+    .yt:hover{background:#e60000;}
+    .ig{background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);color:#fff;}
+    .ig:hover{opacity:0.9;}
+    .tg{background:#0088cc;color:#fff;}
+    .tg:hover{background:#0077b3;}
+    img.icon{
+      width:20px;
+      height:20px;
+      filter:invert(1);
+    }
+  </style>
+</head>
+<body>
+  <div class="buttons">
+    <a class="yt" href="https://www.youtube.com/" target="_blank">
+      <img class="icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" />
+      YouTube
+    </a>
+    <a class="ig" href="https://www.instagram.com/" target="_blank">
+      <img class="icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+      Instagram
+    </a>
+    <a class="tg" href="https://t.me/socsetitg" target="_blank">
+      <img class="icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" />
+      Мой Telegram
+    </a>
+  </div>
+</body>
+</html>
